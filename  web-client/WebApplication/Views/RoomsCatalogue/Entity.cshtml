@@ -1,0 +1,38 @@
+﻿@model  Infrastructure.Entities.Room
+
+<fieldset>
+    <legend>Комната</legend>
+
+    <div class="display-label">Кроватей:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumberOfBeds)
+    </div>
+ <div class="display-label">Комнат:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumberOfRooms)
+    </div>
+ <div class="display-label">Фото:</div>
+    <div class="display-field">
+        <img src="" />
+    </div>
+
+ <div class="display-label">Цена:</div>
+    <div class="display-field"> 
+     @Html.DisplayFor(model => model.Price)
+    </div>
+ 
+ <div class="display-label">Кол-во мест:</div>
+    <div class="display-field"> 
+     @Html.DisplayFor(model => model.Roominess)
+    </div>
+
+  <div class="display-label">Класс:</div>
+    <div class="display-field"> 
+     @Html.DisplayFor(model => model.Type)
+    </div>
+  
+  </fieldset>
+<p>
+   
+    @Html.ActionLink("Back to List", "Index")
+</p>
